@@ -1,0 +1,105 @@
+body{
+    background-color: #0F101F;
+}
+
+
+h1{
+    color: #fade7a;
+    text-align: center;
+    padding: auto;
+    padding-top: 20px;
+    font-family: 'kanit';
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: #0A0B18;
+    margin: auto;
+    color: #fade7a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+
+#cadastroForm{
+    
+    width: 300px;
+    height: 150px;
+    margin: auto;
+}
+
+label{
+    font-family: 'kanit';
+    font-size: 1.1em;
+
+}
+
+input{
+    background-color: beige;
+    font-family: 'kanit';
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: transparent;
+}
+
+
+
+
+input:focus {
+    outline: none;
+  }
+
+::placeholder{
+    color: #171934;
+    font-family: 'kanit';
+}
+
+button{
+    background-color: #fade7a;
+    margin-left: 65px;
+    margin-top: 15px;
+    border-radius: 8px;
+    color: #171934;
+    height: 30px;
+    width: 180px;
+    cursor: pointer;
+
+    
+}
+
+a{
+    color: beige;
+}
+
+p{
+    text-align: center;
+    padding: 20px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.login-link{
+    padding-top: 150px;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-color: #0A0B18;
+       }
+        
+    
+    .container{
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 0px 0px;
+        
+    }
+}

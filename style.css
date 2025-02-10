@@ -1,0 +1,352 @@
+body{
+    background-color:#fade7a;
+}
+
+
+body.light-mode {
+    background-color: #fade7a;
+    color: #0A0B18;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  body.dark-mode {
+    background-color: #0A0B18;
+    color: #fade7a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    h1, h2, h3,p{
+        color: #fade7a;
+    }
+    nav{
+        .btn{
+            color:#fade7a;
+        }
+
+        .btn:hover {
+            background-color:#fade7a ;
+            color:#0A0B18 ;
+        }
+        .btn-primary {
+            background-color:#fade7a ;
+            color:#0A0B18;
+        }
+
+        
+    }
+
+    header > p{
+        color:#fade7a ;
+    }
+    .card{
+        background-color: #fade7a;
+    }
+
+    .card > h2, p{
+        color: #0A0B18;
+    }
+    
+    .curso{
+        color: #0A0B18;
+    }
+
+    .curso:hover{
+        background-color:#0A0B18;
+        color: #fade7a;
+        
+    }
+    
+    footer{
+        color: #fade7a;
+    }
+
+    #copy{
+        color: #fade7a;
+    }
+    
+  }
+  
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Alinha logo e botões */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 1rem 2rem; /* Espaçamento interno */
+    color: #FFFFFF; /* Texto branco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 5px;
+    
+}
+
+/* Logo */
+nav .logo h1 {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: bold;
+    
+
+}
+
+nav a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do elemento pai (no caso, o nav) */
+}
+
+/* Botões */
+.nav-buttons {
+    display: flex;
+    gap: 1rem; /* Espaçamento entre botões */
+}
+
+nav h1:hover{
+    transform:scale(1.1);
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid ; /* Azul brilhante */
+    background-color: transparent;
+    color: #0A0B18;
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.btn:hover {
+    background-color:  #0A0B18;
+    color: #fade7a;
+}
+
+/* Botão principal */
+.btn-primary {
+    background-color: #0A0B18;
+    color: #fade7a;
+}
+
+.btn-primary:hover {
+    background-color:  #0A0B18; /* Azul mais escuro no hover */
+}
+
+button{
+    border: none;
+    background: transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+header{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    color: #0A0B18;
+    font-family: 'kanit';
+}
+
+
+
+main{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.conteudo{
+    width: 450px;
+    
+}
+
+.card{
+    background-color: #0A0B18;
+    height: 300px;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    color: beige;
+    font-size: 1.2;
+    
+}
+
+img{
+    justify-content: center;
+}
+
+img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.curso{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid ;
+    background-color: transparent;
+    color: #fade7a;
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer;
+
+
+}
+
+.curso:hover{
+    background-color:#fade7a;
+    color:#0A0B18;
+    transition: all 0.3s ease;
+}
+
+h1{
+    font-family: 'Kanit';
+    color:#0A0B18;
+
+}
+
+
+
+footer {
+    color:#0A0B18; /* Cor do texto clara */
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 200px;
+    font-weight: 700;
+}
+
+#credito {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 1000;
+}
+
+footer p {
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+input[type="button"]:active {
+    transform: translateY(2px); /* Move o botão para baixo quando clicado */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra para o efeito de "pressionado" */
+}
+
+button:active {
+    transform: translateY(2px); /* Move o botão para baixo quando clicado */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra para o efeito de "pressionado" */
+}
+
+
+
+@media screen and (max-width: 700px){
+    
+    nav .logo h1 {
+        font-size: 1.4rem;
+        padding-right: 20px;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column; /* Empilha os elementos */
+        gap: 20px; /* Ajusta o espaçamento entre eles */
+        width: 100%; /* Usa 100% da largura da tela */
+    }
+
+    .conteudo {
+        width: 100%; /* Cada div ocupa toda a largura */
+    }
+
+    .card {
+        font-size: 1.2em;
+    }
+    
+   
+}
+
+@media screen and (max-width: 800px){
+    
+    
+
+    header{
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column; /* Empilha os elementos */
+        gap: 20px; /* Ajusta o espaçamento entre eles */
+        width: 100%; /* Usa 100% da largura da tela */
+    }
+
+    .conteudo {
+        width: 100%; /* Cada div ocupa toda a largura */
+    }
+
+    .card {
+        font-size: 1.2em;
+    }
+    
+   
+}
+
+@media screen and (max-width: 900px) { 
+    main{
+        width: 95%;
+    }
+
+    .card > p{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 950px) { 
+    main{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

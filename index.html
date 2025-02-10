@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>DevStart</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <h1>DevSTART</h1>
+        </a>
+        <div class="nav-buttons">
+            <a href="login.html"><input type="button" value="Entrar" class="btn"></a>
+            <a href="cadastro.html"><input type="button" value="Cadastre-se" class="btn btn-primary"></a>
+            <button onclick="temanoturno()" id="noturno"><img src="tema1/icons8-moon-30.png" alt="lua" id="theme-icon">
+            </button>
+
+        </div>
+    </nav>
+    
+    <header>
+        <H1>Aprenda Programação com o <strong>DevStart!</strong></H1>
+        <p>Quer começar sua jornada no mundo da programação e transformar ideias em projetos incríveis?<br> No DevSTART, você encontra cursos simples, práticos e diretos ao ponto para aprender a programar do zero. <br> Descubra o seu potencial e dê o primeiro passo rumo à sua carreira na tecnologia! 🚀</p>
+    </header>
+    
+    <main>
+        <div class="conteudo">
+             
+            <div class="card">
+            
+             <img src="https://www.svgrepo.com/show/224794/laptop-html.svg" alt="html" width="50" height="50">
+            <h2>HTML – A Base da Web</h2>
+             <p>Com o curso de HTML, você aprenderá a estrutura básica de um site, criando páginas organizadas e funcionais. Descubra como utilizar tags, links, tabelas, listas e muito mais para dar vida aos seus projetos na internet. Este é o primeiro passo para se tornar um desenvolvedor web! </p>
+             <input type="button" value="Começar curso" class="curso" onclick="html()">
+             <div id="res">
+
+             </div>
+            
+            
+            </div>
+
+            <div class="card">
+            
+                <img src="https://www.svgrepo.com/show/224793/laptop-css.svg" alt="css" width="50" height="50">
+               <h2>CSS – Deixe seu Site Incrível</h2>
+                <p>No curso de CSS, você vai aprender a estilizar suas páginas web com cores, fontes, layouts e efeitos visuais impressionantes. Transforme designs simples em sites profissionais e atrativos, tornando a experiência do usuário muito mais agradável.</p>
+                <input type="button" value="Começar curso" class="curso" >
+               
+               
+               </div>
+
+               <div class="card">
+            
+                <img src="https://www.svgrepo.com/show/224808/laptop-php.svg" alt="php" width="50" height="50">
+               <h2>PHP – O Back-End ao Seu Alcance</h2>
+                <p>No curso de PHP, você aprenderá a construir sites dinâmicos e conectados a bancos de dados. Domine os fundamentos do back-end e crie sistemas robustos, como lojas virtuais, blogs e muito mais. É hora de explorar o lado servidor da programação!</p>
+                <input type="button" value="Começar curso" class="curso">
+               
+               </div>
+
+        </div>
+
+        <div class="conteudo">
+            
+            <div class="card">
+            
+                <img src="https://www.svgrepo.com/show/224802/smartphone.svg" alt="html" width="50" height="50">
+                <H2>Desenvolvimento Mobile – Crie Apps</H2> 
+                <p>Com o curso de Desenvolvimento Mobile, você aprenderá a criar aplicativos para smartphones e tablets. Descubra como desenvolver interfaces intuitivas, garantir desempenho eficiente e criar experiências incríveis para os usuários. Leve suas ideias para os dispositivos móveis!</p>
+                <input type="button" value="Começar curso" class="curso">
+               </div>
+   
+               <div class="card">
+               
+                   <img src="https://www.svgrepo.com/show/224801/database.svg" alt="css" width="50" height="50">
+                   <h2>Banco de Dados</h2>
+                   <p>Em Banco de Dados, você vai armazenar, organizar e gerenciar informações de maneira eficiente. Entenda como criar tabelas, consultar dados e desenvolver sistemas robustos para lidar com grandes volumes de informações. Útil para qualquer projeto moderno!</p>
+                   <input type="button" value="Começar curso" class="curso">
+                  
+                  
+                  </div>
+   
+                  <div class="card">
+               
+                   <img src="https://www.svgrepo.com/show/224803/laptop-seo.svg" alt="php" width="50" height="50">
+                   <h2>SEO – Faça seu Site Ser Encontrado</h2>
+                   <p>Com o curso de SEO (Otimização para Motores de Busca), você vai descobrir como posicionar seus sites nos primeiros lugares do Google e outros buscadores. Aprenda técnicas de otimização, escolha as palavras-chave certas e atraia mais visitantes para seu site.</p>
+                   <input type="button" value="Começar curso" class="curso">
+                  
+                  
+                  </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+          
+
+        <div id="credito">
+            <h3>SITE DESENVOLVIDO POR</h3>
+            <p id="copy">Henrique Alonso | Frontend Developer</p>
+            &COPY;CODEINICIO
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

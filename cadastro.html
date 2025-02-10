@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Dev Star - Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="create.css">
+ 
+</head>
+<body>
+  
+    <div class="container">
+        <h1>Crie sua conta na DevSTART</h1>
+        
+        <form id="cadastroForm">
+            <div class="input-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            
+            </div>
+            
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="confirmPassword">Confirme a senha</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Digite sua senha novamente"  required>
+                
+                <p class="error-message" id="error-message">As senhas não coincidem!</p>
+            </div>
+            
+            <button type="submit">Criar conta</button>
+        
+        </form>
+        
+        <p class="login-link">Já tem uma conta? <a href="login.html">Faça login</a></p>
+    </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

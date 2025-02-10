@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Star - Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="create.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+
+
+</head>
+<body>
+  
+ <div class="container" id="login-container">
+  <h1>Bem-vindo a Dev<strong>START</strong></h1>
+  <form id="login-form">
+    <label for="email">Email:</label>
+    <input type="email" id="emailLogin" placeholder="Digite seu email" required> <br>
+    
+    <label for="password">Senha:</label>
+    <input type="password" id="passwordLogin" placeholder="Digite sua senha" required>
+    
+    <button type="submit">Entrar</button>
+  </form>
+  <p>Não tem uma conta? <a href="javascript:void(0);" id="go-to-cadastro">Cadastre-se</a></p>
+</div>
+
+<div class="container" id="cadastro-container" style="display: none;">
+  <h1>Crie sua conta na DevSTART</h1>
+  
+  <form id="cadastroForm">
+    <div class="input-group">
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+    </div>
+    
+    <div class="input-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="emailCreate" name="email" placeholder="Digite seu email" required>
+    </div>
+    
+    <div class="input-group">
+      <label for="password">Senha</label>
+      <input type="password" id="passwordCreate" name="password" placeholder="Digite sua senha" required>
+    </div>
+    
+    <div class="input-group">
+      <label for="confirmPassword">Confirme a senha</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+      
+      <p class="error-message" id="error-message">As senhas não coincidem!</p>
+    </div>
+    
+    <button type="submit">Criar conta</button>
+  </form>
+  
+  <p class="login-link">Já tem uma conta? <a href="javascript:void(0);" id="go-to-login">Faça login</a></p>
+</div>
+
+
+
+  
+
+  <script src="scripts.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
